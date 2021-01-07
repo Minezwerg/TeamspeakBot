@@ -3,10 +3,8 @@ package net.trainingsoase.teamspeakbot.main;
 import com.github.theholywaffle.teamspeak3.TS3ApiAsync;
 import com.github.theholywaffle.teamspeak3.TS3Config;
 import com.github.theholywaffle.teamspeak3.TS3Query;
-import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
 import net.trainingsoase.teamspeakbot.events.Events;
 import net.trainingsoase.teamspeakbot.utils.MongoManager;
-import org.bson.Document;
 
 public class Main {
 
@@ -42,15 +40,5 @@ public class Main {
         System.out.println("Der Bot wurde gestartet!");
         Events.loadEvents();
         System.out.println("Der Event-Listener wurde registriert!");
-
-        /*Document playerDoc = new Document("ts_clientid", "123")
-                .append("ts_firstJoinName", "name")
-                .append("ts_dbid", "31")
-                .append("ts_IP", "10.10.10.1")
-                .append("mc_UUID", "notset")
-                .append("mc_Rang", "notset");
-        Main.mongoManager.getAccounts().insertOne(playerDoc, (unused, throwable2) -> {
-            System.out.println("Player created");
-        });*/
     }
 }

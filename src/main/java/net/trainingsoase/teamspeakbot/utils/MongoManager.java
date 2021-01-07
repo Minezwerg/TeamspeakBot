@@ -1,6 +1,5 @@
 package net.trainingsoase.teamspeakbot.utils;
 
-import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
 import com.mongodb.async.client.*;

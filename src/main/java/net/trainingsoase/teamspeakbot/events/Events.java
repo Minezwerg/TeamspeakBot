@@ -59,7 +59,6 @@ public class Events {
                                                     // Do nothing
                                                     break;
                                             }
-
                                         }));
                                     }));
                                     break;
